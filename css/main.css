@@ -1,0 +1,340 @@
+/* 
+#000000 black
+#300059 darker purple
+#452379 dark purple
+#6C0F4F magenta
+#A02045 light magenta
+#DD3634 dark neon coral
+#FE4644 neon coral
+#E5E5E5 gray
+#FFFFFF white
+ */
+
+/*
+header {
+	background-color: #300059;
+	font-family: Futura;
+}
+*/
+
+header {
+  background-color: #300059;
+  font-family: Futura; 
+  padding: 1rem;
+}
+
+header a .logo{
+	width:5%;
+	height:5%;
+}
+
+header a:hover {
+	text-decoration: underline;
+}
+
+@media screen and (max-width: 39.9375em){
+
+  header .menu {
+    /* position menu on top, full screen */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    /* menu slide in details */
+    transform: translateY(100%);
+    transition: transform .4s;
+    /* position content in vertical center */
+    flex-direction: column;
+    justify-content: center;
+    /* styling details */
+    background-color: #000000;
+  }
+
+  header .menu.slide-in {
+    transform: translateY(0);
+  }
+
+  header .menu li {
+    /* override Foundation class and align content on left */
+    justify-content: flex-start !important;
+    /* add styling details */
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  header .menu li a {
+    /* add styling details */
+    color: #ffffff;
+  }
+
+  header button {
+    cursor: pointer;
+  }
+
+  header button.show-for-small-only {
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+  }
+
+  header button.show-for-small-only.btnToggle {
+    color: #ffffff;
+  }
+
+  .orbit-caption p{
+  font-size: 12px; }
+
+  .tickets .cell.small-2.medium-2 h3 {
+  	font-size: 12px;
+  }
+
+    .tickets .cell.small-2.medium-2 h4 {
+  	font-size: 12px;
+  }
+
+    .tickets .cell.small-2.medium-2 p {
+  	font-size: 12px;
+  }
+
+  .ticket .grid-container {
+	padding-left: 5rem;
+	}
+
+
+}
+
+/*------*/
+
+.cell a{
+	color: #FFFFFF;
+}
+
+.header-button a{
+  background-color: #FFFFFF; 
+  border: none;
+  padding: 1rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 1rem;
+  color: #300059;
+}
+
+.hero img {
+	background-image: url("hero.png");
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	position: relative;
+}
+
+.sec-introduction {
+	font-family: Futura;
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+}
+
+.sec-introduction b a {
+	color: #FE4644;
+}
+
+.sec-introduction b {
+	color: #FE4644;
+}
+
+.intro-subtext p {
+	font-size: 10px;
+}
+
+.sec-featured {
+	margin-top: 5rem;
+	margin-bottom: 10rem;
+}
+
+.mc-head h1 {
+	color: #DD3634;
+	font-weight: bolder;
+}
+
+.main-content a {
+	color: #6C0F4F;
+}
+
+.grid-container {
+	text-align: left;
+}
+
+.featured .cell {
+	padding: 2rem;
+}
+
+.featured img {
+	border: 0.5rem solid #452379;
+	border-radius: 1rem;
+}
+
+.featured a {
+	background-color: #452379; 
+  	border: none;
+  	padding: 1rem 1rem;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 16px;
+  	border-radius: 1rem;
+  	color: #ffffff;
+}
+
+.featured h2 {
+	color: #FE4644;
+}
+
+.carousel {
+	margin-top: 10rem;
+	margin-bottom: 10em;
+}
+
+.carousel h1 {
+	color: #DD3634;
+	font-weight: bolder;
+}
+
+.carousel h2 {
+	color: #FE4644;
+
+}
+
+.figcaption .carousel .explore-more a {
+	background-color: #452379; 
+  	border: none;
+  	padding: 1rem 1rem;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 16px;
+  	border-radius: 1rem;
+  	color: #ffffff;
+}
+
+.ticketsandtimes {
+	background-color: #6C0F4F;
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+	margin-left: 5rem;
+	margin-right: 5rem;
+	color: #ffffff;
+	border-radius: 1rem;
+}
+.ticket-title {
+	text-align: center;
+}
+
+.ticket-title h2 {
+	text-align: center;
+	font-weight: bolder;
+}
+
+.ticket-title b {
+	color: #FE4644;
+}
+
+.tickets {
+	text-align: center;
+	margin-top: 2.5rem;
+}
+
+.tickets p{
+	font-size: 23px;
+}
+
+.ticket p {
+	text-align: center;
+	font-size: 23px;
+}
+
+.ticket h3 {
+	font-weight: bold;
+	font-size: 23px;
+}
+
+.ticket h4 {
+	font-weight: bold;
+	font-size: 23px;
+	color: #FE4644;
+}
+
+.ticket .grid-container {
+	padding-left: 9rem;
+}
+
+.times {
+	text-align: center;
+	margin-top: 2.5rem;
+}
+
+.times h2 {
+	font-weight: bolder;
+}
+
+.times p {
+	text-align: center;
+	font-size: 23px;
+}
+
+footer {
+	background: #452379;
+	font-family: Barlow;
+}
+
+.contact {
+	margin-top: 2.5rem;
+}
+
+.contact h2{
+	color: #FE4644;
+}
+
+.socials {
+	margin-top: 2.5rem;
+	color: #ffffff;
+}
+
+.socials i {
+	font-size: 3.5rem;
+}
+
+.newsletter {
+	color: #ffffff;
+}
+
+.membership {
+	margin-top: 2rem;
+	color: #ffffff;
+}
+
+.membership a {
+	color: #000000;
+	background-color: #ffffff;
+	padding: 1rem;
+	border-radius: 1rem;
+	text-align: center;
+}
+
+.address {
+	color: #ffffff;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.address h2 p{
+	text-align: center;
+}
+
+.copyright {
+	color: #FE4644;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
